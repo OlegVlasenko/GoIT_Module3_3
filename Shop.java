@@ -34,4 +34,9 @@ public class Shop {
         instruments.add(instrument);
     }
 
+    public void print(){
+        for(MusiInstrument instrument : this.getInstruments())
+            System.out.println(instrument.getType().toString() + " " + instrument.hashCode());
+
+    }
 }

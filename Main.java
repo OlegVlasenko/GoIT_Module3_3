@@ -12,15 +12,14 @@ public class Main {
         Trumpet trumpet1 = new Trumpet(), trumpet2 = new Trumpet();
 
         System.out.println("----------------------");
-        System.out.println("----------------------");
+
 
         Shop shop1 = new Shop();
         shop1.addInstrument(guitar1);
         shop1.addInstrument(piano1);
         shop1.addInstrument(trumpet1);
 
-        for(MusiInstrument instrument : shop1.getInstruments())
-            System.out.println(instrument.getType().toString() + " " + instrument.hashCode());
+        shop1.print();
 
         System.out.println("----------------------");
 
@@ -31,8 +30,7 @@ public class Main {
 
         Shop shop2 = new Shop(someList);
 
-        for(MusiInstrument instrument : shop2.getInstruments())
-            System.out.println(instrument.getType().toString() + " " + instrument.hashCode());
+        shop2.print();
 
 
     }
